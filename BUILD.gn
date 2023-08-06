@@ -1,0 +1,27 @@
+group("all"){
+  deps = [
+    ":hello",
+    "//helloservice:hello2",
+    
+  ]
+}
+
+executable("hello") {
+  sources = [ "hello_world.cc" ]
+}
+
+# shared_library("hello_shared") {
+#   sources = [
+#     "hello_shared.cc",
+#     "hello_shared.h",
+#   ]
+
+#   defines = [ "HELLO_SHARED_IMPLEMENTATION" ]
+# }
+
+# static_library("hello_static") {
+#   sources = [
+#     "hello_static.cc",
+#     "hello_static.h",
+#   ]
+# }

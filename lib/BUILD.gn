@@ -1,0 +1,15 @@
+import ("//build/config/features/features.gni")
+
+config("two_people"){
+    if(is_two_people){
+        defines = ["TWO_PEOPLE"]
+    }
+}
+
+static_library("hello2_static") {
+  sources = [
+    "hello.h",
+    "hello.cc",
+  ]  
+  configs += [":two_people"]
+}

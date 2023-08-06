@@ -1,0 +1,12 @@
+# The location of the build configuration file.
+buildconfig = "//build/BUILDCONFIG.gn"
+check_targets = [
+    #"//doom_melon/*",  # Check everything in this subtree.
+    #"//tools:mind_controlling_ant",  # Check this specific target.
+  ]
+
+default_args = {
+    # Default to release builds for this project.
+    is_debug = false
+    is_component_build = false
+  }

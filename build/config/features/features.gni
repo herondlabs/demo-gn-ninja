@@ -1,0 +1,3 @@
+declare_args() {
+    is_two_people = false
+}

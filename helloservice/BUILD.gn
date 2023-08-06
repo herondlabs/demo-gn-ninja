@@ -1,0 +1,9 @@
+executable("hello2") {
+  sources = [ "say_hello.cc" ]
+
+  deps = [
+    "//lib:hello2_static"
+  ]  
+
+  configs += ["//lib:two_people"]
+}
