@@ -2,7 +2,8 @@
 # run this repo on Linux environment or Windows
 
 # Linux set up
-Grab gn binary for linux at: https://gn.googlesource.com/gn/
+- Grab gn binary for linux at: https://gn.googlesource.com/gn/
+- Grab ninja binary for linux at: https://github.com/ninja-build/ninja/releases
 
 # Windows setup 
 1. Install [LLVM-16.0.0-win64.exe](https://github.com/llvm/llvm-project/releases/download/llvmorg-16.0.0/LLVM-16.0.0-win64.exe) for windows
